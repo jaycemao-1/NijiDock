@@ -27,7 +27,7 @@
 </head>
 <body>
   <h1>次元坞（NijiDock）技术支持</h1>
-  <p class="meta">最后更新：2026-02-07</p>
+  <p class="meta">最后更新：2026-02-08</p>
 
   <div class="card">
     <h2>联系我们</h2>
@@ -42,6 +42,7 @@
       <li>macOS 版本（例如 macOS 14.x）</li>
       <li>问题复现步骤与截图/录屏</li>
       <li>是否已授予定位权限（如涉及天气）</li>
+      <li>是否为你主动选择的本地文件/文件夹（如涉及皮肤、壁纸、Dock 文件项）</li>
     </ul>
   </div>
 
@@ -55,6 +56,12 @@
 
     <p><strong>Q3：皮肤视频不播放或无声音？</strong><br />
       A：请确认当前皮肤为视频类型，并检查应用内“播放声音”相关开关。</p>
+
+    <p><strong>Q4：重启后本地文件/皮肤无法访问？</strong><br />
+      A：请重新通过应用内“选择图片/视频”或拖拽方式选择一次目标文件。NijiDock 使用 macOS 沙盒与安全作用域书签保存文件访问授权，若原文件路径变化、文件被移动/删除，需重新授权。</p>
+
+    <p><strong>Q5：为什么应用不能任意读取磁盘上的所有文件？</strong><br />
+      A：NijiDock 遵循 App Sandbox，只能访问你明确授权或系统允许范围内的文件，以保护你的隐私和数据安全。</p>
   </div>
 
   <p>隐私政策：<a href="./privacy-policy.html">privacy-policy.html</a></p>
